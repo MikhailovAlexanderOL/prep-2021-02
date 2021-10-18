@@ -39,16 +39,15 @@ int main(int argc, const char** argv) {
         case TST_FOO_FIX: {
             int to = atoi(data);
             size_t ticks_count = timer_from(to);
-            printf("%zu",ticks_count);
+            printf("%zu", ticks_count);
             break;
         }
         case TST_FOO_IMPL: {
             if (argc == 4) {
                 int base = atoi(data);
                 int pow =  atoi(argv[3]);
-                int res = custom_pow(base, pow);    
-
-                printf("%i",res);
+                int res = custom_pow(base, pow);
+                printf("%i", res);
                 break;
             } else {
                 return ERR_ARGS_COUNT;
@@ -56,14 +55,14 @@ int main(int argc, const char** argv) {
         }
         case TST_MOD_IMPL: {
              int num = atoi(data);
-             printf("%d",is_prime(num));
-            break;
+             printf("%d", is_prime(num));
+             break;
         }
         case TST_MOD_REKURSIA: {
              int num = atoi(data);
-             is_rekursia (num);
+             is_rekursia(num);
              break;
-        }     
+        }
         default: {
             return ERR_WRONG_FLG;
             }

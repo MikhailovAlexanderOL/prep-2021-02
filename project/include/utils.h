@@ -1,10 +1,10 @@
 #include <string.h>
-#ifndef UTILS_H
-#define UTILS_H
+#ifndef PROJECT_INCLUDE_UTILS_H_
+#define PROJECT_INCLUDE_UTILS_H_
 
 
 size_t timer_from(int from);
 int custom_pow(int base, int power);
 
-#endif //UTILS_H
+#endif  //  PROJECT_INCLUDE_UTILS_H_
 

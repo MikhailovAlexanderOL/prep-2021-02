@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <is_rekursia.h>
-int is_rekursia(int n){
-    if (n==1) {
-     printf("%d",n);
+int is_rekursia(int n) {
+    if (n == 1) {
+     printf("%d", n);
     return n;
     }
-    if (n<=0){
+    if (n <= 0) {
         printf(" %d", is_rekursia(n+1) -1);
         return n;
     } else {
@@ -13,4 +13,4 @@ int is_rekursia(int n){
         return n;
     }
     return 1;
- }            
+}

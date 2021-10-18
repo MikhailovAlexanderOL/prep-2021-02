@@ -5,14 +5,14 @@ HDRS_DIR = project/include
 SRCS = \
        project/src/main.c \
        project/src/utils.c \
-       project/src/is_prime.c\
+       project/src/is_prime.c \
        project/src/is_rekursia.c
 .PHONY: all build rebuild check test clean
 
 all: clean check test
 
 $(TARGET): $(SRCS) 
-	$(CC) -Wpedantic -Wall -Wextra -Werror -I $(HDRS_DIR) -o $(TARGET) $(CFLAGS) $(SRCS)
+	$(CC) -Wpedantic -Wall -Wextra -Werror -I $(HDRS_DIR) -o $(TARGET) $(CFLAGS) $(SRCS) -lm
 
 build: $(TARGET)
 
